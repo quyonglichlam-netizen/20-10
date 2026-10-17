@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Chúc mừng 20/10 🌷</title>
+<title>Chúc mừng 20/10 - Gửi mẹ 🌷</title>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -58,7 +58,7 @@ button:active{transform:scale(.97)}
 <section id="lock" class="screen">
   <div class="box" id="lockbox">
     <div style="font-size:42px">🔒🌷</div>
-    <h1>Món quà dành cho cậu</h1>
+    <h1>Món quà dành cho mẹ</h1>
     <p>Lật các bông hoa để tìm 4 con số ẩn, rồi nhập vào ô bên dưới nhé</p>
     <div class="grid" id="grid"></div>
     <div class="slots" id="slots"></div>
@@ -87,7 +87,7 @@ button:active{transform:scale(.97)}
   <div class="letter" id="letter">
     <p id="l1"></p><p id="l2"></p><p id="l3"></p><p id="l4"></p>
     <p class="sig" id="l5"></p>
-    <div id="ans" style="text-align:center;display:none"><button id="yes">Cảm ơn nhé 💖</button></div>
+    <div id="ans" style="text-align:center;display:none"><button id="yes">Mẹ cảm ơn con nhé 💖</button></div>
   </div>
 </section>
 
@@ -96,11 +96,11 @@ button:active{transform:scale(.97)}
   // ====== Tùy chỉnh tại đây ======
   var PASSWORD="2010";
   var LINES=[
-    "Gửi cậu,",
-    "Nhân ngày 20/10, tớ chúc cậu luôn rạng rỡ như đóa tulip đầu mùa: dịu dàng, kiêu sa và tràn đầy sức sống.",
-    "Cảm ơn cậu vì những nụ cười, sự quan tâm và cả những ngày bình thường nhưng có cậu nên trở nên thật đẹp.",
-    "Chúc cậu luôn khỏe mạnh, vui vẻ và mọi điều cậu ấp ủ đều trở thành hiện thực.",
-    "Chúc cậu một ngày 20/10 thật ngọt ngào 🌷"
+    "Gửi mẹ yêu,",
+    "Nhân ngày 20/10, con chúc mẹ luôn rạng rỡ như đóa tulip đầu mùa: dịu dàng, xinh đẹp và tràn đầy sức sống.",
+    "Cảm ơn mẹ vì đã luôn yêu thương, hy sinh và âm thầm lo cho con từng bữa cơm, giấc ngủ.",
+    "Con chúc mẹ luôn khỏe mạnh, bình an và mọi điều mẹ mong ước đều trở thành hiện thực.",
+    "Con yêu mẹ nhiều lắm! 🌷"
   ];
   // ===============================
   var $=function(i){return document.getElementById(i)};
@@ -176,7 +176,7 @@ button:active{transform:scale(.97)}
 
   // Mở quà: hiện thư, gõ từng dòng
   $("yes").onclick=function(){
-    $("yes").textContent="Chúc cậu luôn vui nhé! 💞";$("yes").disabled=true;
+    $("yes").textContent="Con yêu mẹ nhiều lắm! 💞";$("yes").disabled=true;
     for(var i=0;i<40;i++)setTimeout(spawn,i*40);
   };
   var opened=false;
