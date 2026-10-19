@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Chúc mừng 20/10 - Gửi mẹ 🌷</title>
+<title>Chúc mừng 20/10 - Gửi mẹ 🌼</title>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -38,7 +38,8 @@ button:active{transform:scale(.97)}
 .shake{animation:shake .4s}
 @keyframes shake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
 #main{flex-direction:column;gap:4px;overflow-y:auto;justify-content:flex-start;padding-top:max(16px,env(safe-area-inset-top,0px));padding-bottom:16px}
-.tulip{height:min(19vh,170px);width:auto;transform-origin:50% 100%;animation:sway 4s ease-in-out infinite;filter:drop-shadow(0 0 18px rgba(255,92,138,.45))}
+.garden{height:min(19vh,150px);width:auto;max-width:92vw;filter:drop-shadow(0 0 14px rgba(255,255,255,.35))}
+.sw{transform-box:fill-box;transform-origin:50% 100%;animation:sway 4s ease-in-out infinite}
 @keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
 .title{font-family:"Playfair Display","Times New Roman",serif;font-size:clamp(20px,5.2vw,28px);margin:4px 0 0;text-align:center;font-weight:600;text-shadow:0 0 18px rgba(255,92,138,.5)}
 .sub{color:var(--muted);margin:0 0 6px;font-size:13.5px}
@@ -48,7 +49,7 @@ button:active{transform:scale(.97)}
 .letter .sig{text-align:right;color:var(--muted);font-style:italic;margin:0}
 #music{position:fixed;right:14px;top:calc(14px + env(safe-area-inset-top,0px));z-index:5;width:44px;height:44px;padding:0;margin:0;font-size:20px;background:var(--card);border:1px solid var(--line);box-shadow:none}
 .gift{margin-top:8px}
-@media (prefers-reduced-motion:reduce){.tulip,.p{animation:none}}
+@media (prefers-reduced-motion:reduce){.sw,.p{animation:none}}
 </style>
 </head>
 <body>
@@ -57,7 +58,7 @@ button:active{transform:scale(.97)}
 
 <section id="lock" class="screen">
   <div class="box" id="lockbox">
-    <div style="font-size:42px">🔒🌷</div>
+    <div style="font-size:42px">🔒🌼</div>
     <h1>Món quà dành cho mẹ</h1>
     <p>Lật các bông hoa để tìm 4 con số ẩn, rồi nhập vào ô bên dưới nhé</p>
     <div class="grid" id="grid"></div>
@@ -69,20 +70,9 @@ button:active{transform:scale(.97)}
 </section>
 
 <section id="main" class="screen hidden">
-  <svg class="tulip" viewBox="0 0 120 190" aria-hidden="true">
-    <defs>
-      <linearGradient id="pet" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8fb1"/><stop offset="1" stop-color="#d4306a"/></linearGradient>
-      <linearGradient id="lf" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2f9e5b"/><stop offset="1" stop-color="#1c6b3c"/></linearGradient>
-    </defs>
-    <path d="M60 80 C58 120 62 150 60 188" stroke="#2f9e5b" stroke-width="5" fill="none" stroke-linecap="round"/>
-    <path d="M60 188 C30 170 14 140 20 105 C42 120 56 150 60 188Z" fill="url(#lf)"/>
-    <path d="M60 188 C90 175 106 150 100 118 C78 130 64 155 60 188Z" fill="url(#lf)"/>
-    <path d="M28 30 C26 62 40 86 60 88 C44 70 40 48 44 22Z" fill="#e0457a"/>
-    <path d="M92 30 C94 62 80 86 60 88 C76 70 80 48 76 22Z" fill="#e0457a"/>
-    <path d="M44 22 C50 12 56 8 60 4 C64 8 70 12 76 22 C82 50 74 78 60 88 C46 78 38 50 44 22Z" fill="url(#pet)"/>
-  </svg>
+  <svg class="garden" viewBox="0 0 260 150" aria-hidden="true"><defs><g id="xc"><g fill="#fff"><ellipse cx="0" cy="-9" rx="3.6" ry="8" transform="rotate(0)"/><ellipse cx="0" cy="-9" rx="3.6" ry="8" transform="rotate(45)"/><ellipse cx="0" cy="-9" rx="3.6" ry="8" transform="rotate(90)"/><ellipse cx="0" cy="-9" rx="3.6" ry="8" transform="rotate(135)"/><ellipse cx="0" cy="-9" rx="3.6" ry="8" transform="rotate(180)"/><ellipse cx="0" cy="-9" rx="3.6" ry="8" transform="rotate(225)"/><ellipse cx="0" cy="-9" rx="3.6" ry="8" transform="rotate(270)"/><ellipse cx="0" cy="-9" rx="3.6" ry="8" transform="rotate(315)"/></g><circle r="5" fill="#ffc928"/></g></defs><g class="sw" style="animation-delay:-0.0s"><path d="M50 79 C43 109 57 139 50 146" stroke="#3cae6b" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="59" cy="117" rx="9" ry="3.6" fill="#2f9e5b" transform="rotate(-30 59 117)"/><use href="#xc" transform="translate(50 72) scale(0.9)"/></g><g class="sw" style="animation-delay:-0.7s"><path d="M104 52 C97 82 111 112 104 146" stroke="#3cae6b" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="113" cy="90" rx="9" ry="3.6" fill="#2f9e5b" transform="rotate(-30 113 90)"/><use href="#xc" transform="translate(104 42) scale(1.2)"/></g><g class="sw" style="animation-delay:-1.4s"><path d="M160 72 C153 102 167 132 160 146" stroke="#3cae6b" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="169" cy="110" rx="9" ry="3.6" fill="#2f9e5b" transform="rotate(-30 169 110)"/><use href="#xc" transform="translate(160 64) scale(1.0)"/></g><g class="sw" style="animation-delay:-2.1s"><path d="M212 91 C205 121 219 151 212 146" stroke="#3cae6b" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="221" cy="129" rx="9" ry="3.6" fill="#2f9e5b" transform="rotate(-30 221 129)"/><use href="#xc" transform="translate(212 84) scale(0.85)"/></g><g class="sw" style="animation-delay:-2.8s"><path d="M132 104 C125 134 139 164 132 146" stroke="#3cae6b" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="141" cy="142" rx="9" ry="3.6" fill="#2f9e5b" transform="rotate(-30 141 142)"/><use href="#xc" transform="translate(132 98) scale(0.7)"/></g><g class="sw" style="animation-delay:-3.5s"><path d="M18 109 C11 139 25 169 18 146" stroke="#3cae6b" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="27" cy="147" rx="9" ry="3.6" fill="#2f9e5b" transform="rotate(-30 27 147)"/><use href="#xc" transform="translate(18 104) scale(0.6)"/></g><path d="M0 148 Q65 136 130 146 T260 142 V150 H0Z" fill="#1c6b3c"/></svg>
   <h2 class="title">Chúc mừng ngày 20/10 💖</h2>
-  <p class="sub">Một chút tulip, một chút yêu thương</p>
+  <p class="sub">Một vườn xuyến chi gửi tặng mẹ</p>
   <button id="open" class="gift">🎁 Mở quà</button>
   <div class="letter" id="letter">
     <p id="l1"></p><p id="l2"></p><p id="l3"></p><p id="l4"></p>
@@ -97,10 +87,10 @@ button:active{transform:scale(.97)}
   var PASSWORD="2010";
   var LINES=[
     "Gửi mẹ yêu,",
-    "Nhân ngày 20/10, con chúc mẹ luôn rạng rỡ như đóa tulip đầu mùa: dịu dàng, xinh đẹp và tràn đầy sức sống.",
-    "Cảm ơn mẹ vì đã luôn yêu thương, hy sinh và âm thầm lo cho con từng bữa cơm, giấc ngủ.",
-    "Con chúc mẹ luôn khỏe mạnh, bình an và mọi điều mẹ mong ước đều trở thành hiện thực.",
-    "Con yêu mẹ nhiều lắm! 🌷"
+    "Nhân ngày 20/10, con chúc mẹ luôn tươi vui như những bông xuyến chi ven đường: giản dị, dịu dàng mà vẫn rạng ngời dưới nắng.",
+    "Cảm ơn mẹ đã âm thầm che chở, lo cho con từng bữa cơm, từng giấc ngủ suốt những năm qua.",
+    "Con chúc mẹ luôn khỏe mạnh, bình an, và mỗi ngày của mẹ đều ngập tràn niềm vui như một vườn hoa nở rộ.",
+    "Con yêu mẹ nhiều lắm! 🌼"
   ];
   // ===============================
   var $=function(i){return document.getElementById(i)};
@@ -109,7 +99,7 @@ button:active{transform:scale(.97)}
   function spawn(){
     var e=document.createElement("div"),r=Math.random();
     e.className="p";
-    e.textContent=r<.45?"🌷":r<.8?"💗":"🌸";
+    e.textContent=r<.5?"🌼":r<.8?"🤍":"💗";
     var s=14+Math.random()*20,d=7+Math.random()*7;
     e.style.cssText="left:"+(Math.random()*100)+"vw;font-size:"+s+"px;animation-duration:"+d+"s;--dx:"+((Math.random()-.5)*160)+"px;--r:"+((Math.random()-.5)*540)+"deg";
     fx.appendChild(e);
@@ -126,7 +116,7 @@ button:active{transform:scale(.97)}
     while(pos.length<code.length){var r=Math.floor(Math.random()*total);if(pos.indexOf(r)<0)pos.push(r)}
     code.forEach(function(){var d=document.createElement("div");d.className="slot";d.textContent="?";sl.appendChild(d)});
     for(var i=0;i<total;i++)(function(i){
-      var b=document.createElement("button");b.className="tile";b.textContent="🌷";b.setAttribute("aria-label","Bông hoa "+(i+1));
+      var b=document.createElement("button");b.className="tile";b.textContent="🌼";b.setAttribute("aria-label","Bông hoa "+(i+1));
       b.onclick=function(){
         if(b.classList.contains("open"))return;
         b.classList.add("open");
@@ -160,18 +150,27 @@ button:active{transform:scale(.97)}
 
   // Nhạc nền: phát từ đầu bài ngay khi mở khóa, lặp lại
   // Dữ liệu nhạc nằm ở cuối file (window.AUDIO_DATA) để phần code ở trên dễ đọc
-  var au=null;
-  function audio(){if(!au){au=new Audio(window.AUDIO_DATA);au.loop=true}return au}
-  function play(){
-    var a=audio();a.currentTime=0;
-    var r=a.play();
-    if(r&&r.catch)r.catch(function(){$("music").textContent="🔇"});
-    $("music").textContent="🎵";
+  var au=null,started=false;
+  function audio(){if(!au){au=new Audio(window.AUDIO_DATA);au.loop=true;au.preload="auto"}return au}
+  function tryPlay(){
+    var a=audio(),r;
+    try{r=a.play()}catch(e){}
+    if(r&&r.then)r.then(function(){started=true;$("music").textContent="🎵"}).catch(function(){started=false;$("music").textContent="🔇"});
+    else{started=true;$("music").textContent="🎵"}
   }
+  function play(){if(!started||audio().paused)tryPlay()}
+  // Bắt đầu phát ngay từ lần chạm đầu tiên (trình duyệt chỉ cho phát nhạc sau khi người dùng chạm/bấm)
+  function firstTouch(e){
+    if(started)return;
+    if(e.target&&e.target.id==="music")return;
+    tryPlay();
+  }
+  document.addEventListener("pointerdown",firstTouch,true);
+  document.addEventListener("keydown",firstTouch,true);
   $("music").onclick=function(){
     var a=audio();
-    if(a.paused){a.play();$("music").textContent="🎵"}
-    else{a.pause();$("music").textContent="🔇"}
+    if(started&&!a.paused){a.pause();$("music").textContent="🔇"}
+    else{tryPlay()}
   };
 
   // Mở quà: hiện thư, gõ từng dòng
@@ -183,6 +182,7 @@ button:active{transform:scale(.97)}
   $("open").onclick=function(){
     if(opened)return;opened=true;
     $("open").style.display="none";
+    if(!started||audio().paused)tryPlay();
     for(var i=0;i<30;i++)setTimeout(spawn,i*40);
     var L=$("letter");L.classList.add("show");
     var idx=0;
